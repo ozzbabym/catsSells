@@ -1,0 +1,379 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+ 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+}
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ 
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('./img/header.png') no-repeat;
+    min-height: 252px;
+}
+
+.header-container {
+    padding: 50px 100px;
+    color: white;
+}
+
+
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.phoneCall {
+    margin-left: 50px;
+}
+
+.menu {
+    display: flex;  
+    gap: 50px; 
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+
+.navbar-menu div:hover{
+    font-weight: bold;
+}
+
+.navbar-menu div:focus{
+    font-weight: bold !important;
+}
+
+.wrapper-content {
+    max-width: 1200px;
+    margin: 50px auto;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-popup {
+    display: flex;
+}
+.navbar-popup div{
+    display: flex;
+    margin: 0px 20px;  
+}
+
+
+.navbar-popup img{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 20px;
+    height: 15px;
+    
+}
+.navbarRotate {
+    transform: rotate(180deg);
+}
+
+
+.container-card {
+    padding-top: 38px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+
+
+.perCent {
+    display: flex;
+    align-items: center;
+    background: #E52D2D;
+    border-radius: 5px;
+    width: 78px;
+    height: 39px;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.inImage {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.container-description {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.container-description b{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info{
+    border-left: 4px solid #6EBBD3;
+    display: flex; 
+    justify-content: space-between; 
+    padding-left: 10px;
+}
+.info div{
+    width: 100px;
+}
+
+.buttonBuy {
+    background: #6EBBD3; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 68px;
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.blackButton {
+    background: #1F2021 !important;
+}
+
+.buttonShow { 
+    margin-top: 68px;
+    border: 1px solid #CACACA;
+    color: black; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 68px;
+    width: 380px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.buttonBuy:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.footer {
+    color: white;
+    background: #1F2021;
+    min-height: 312px;
+    margin-top: 100px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 600px;
+}
+
+
+.buttonSubscribe{
+    background: #6EBBD3; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 250px;
+    height: 65px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.buttonSubscribe:active {
+    opacity: 0.6;
+}
+
+.inputSubscribe{
+    width: 300px;
+    height: 65px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.price, .age{
+    font-weight: 400;
+}
+
+.price:hover, .age:hover {
+    font-weight: 700 !important;
+    cursor: pointer;
+}
+
+.backUp {
+    display: none;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+    width: 59px;
+    height: 59px;
+    background: url('./img/backUp.png') no-repeat center center;
+    background-color: #6EBBD3;
+    cursor: pointer;
+}
+
+.modalAdd {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    transition: all 1s;
+}
+
+.favorite {
+    cursor: pointer;
+}
+
+.emailContainer{
+    margin: 100px 0px 24px 0px; 
+    display: flex;
+}
+.foundCats {
+    font-weight: 700; 
+    font-size: 38px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .modalAdd {
+        left: 20%;
+    }
+
+    .emailContainer{
+        display: block;
+    }
+    .emailContainer div{
+        margin-top: 10px;
+    }
+    .email{
+        padding-bottom: 50px;
+    }
+    .header-menu {
+        width: 300px;
+        margin: 20px 0px;
+        display: block;  
+        gap: 10px; 
+    }
+    .menu {
+        width: 300px;
+        margin: 10px 0px;
+        display: block;  
+        gap: 10px; 
+    }
+    .header-container{
+        padding: 10px 10px;
+    }
+    .foundCats {
+        font-size: 30px;
+    }
+}
